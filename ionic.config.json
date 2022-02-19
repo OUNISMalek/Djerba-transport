@@ -1,0 +1,7 @@
+{
+  "name": "APPJTMPFE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
