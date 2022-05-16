@@ -1,0 +1,64 @@
+<ion-header class="bgcolor" background-color="4a7dbc">
+  <ion-toolbar>
+    <ion-img class="logoimg" src="../assets/icon/logoJTM_prev_ui.png"></ion-img>
+    <ion-title class="title">Suivie de parcelles</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<form >
+  <br/>
+  <br/>
+<legend>
+<h2 class="vc_custom_heading">Suivez Votre parcelle</h2>
+</legend>
+<br/>
+<br/>
+<div class="wrapper">
+<div class="block">
+<ion-label>
+ <h3 class="aaa">NUMERO REÇU</h3>
+</ion-label>
+ <span class="shell">
+   <ion-input type="text" name="num_recu" title="10-character alphanumeric zip code in the format of AA11-111111" maxlength="11" placeholder="DJ99-999999" [(ngModel)]="donnee.Numerorecu"></ion-input></span>
+</div>
+<br/>
+
+<div class="block" class="date">
+<ion-label >
+ <h3 class="aaa">DATE</h3></ion-label>
+<ion-input type="date" id="date_recu" name="date_recu" required="" [(ngModel)]="donnee.Date"></ion-input>
+</div>
+<br/>
+
+<div class="block">
+<ion-label>
+<h3 class="aaa">DESTINATION</h3>
+</ion-label>
+</div>
+<select name="depots" id="depots1" data-native-menu="false" required="" [(ngModel)]="donnee.Destination">
+  <option value="">--- Veuillez Choisir ---</option> 
+   <option value="BG">Bengardene</option>
+   <option value="DJ">Djerba </option>
+   <option value="DZ">Douz</option>
+   <option value="GA">Gabes</option>
+   <option value="JA">Zarzis</option>
+   <option value="JM">Jerba Midoun</option>
+   <option value="KA">Kairouan</option>
+   <option value="KB">Kebelli</option>
+   <option value="MD">Medenine</option>
+   <option value="SF">Sfax</option>
+   <option value="SO">Sousse</option>
+   <option value="TA">Tataouine </option>
+   <option value="TN">Tunis </option> 
+  </select>
+<br>
+<div style=" padding-top:10px;">
+ <p style="text-align: center;">
+  <span class="bbb"></span>
+  <ion-button type="submit" shape="round" name="SubmitButton" id="SubmitButton" (click)="Valider()">Valider</ion-button> 
+ </p>
+</div>
+</div>
+</form>
+
+</ion-content>

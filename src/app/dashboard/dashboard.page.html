@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-img class="logoimg" src="../assets/icon/logoJTM_prev_ui.png"></ion-img>
+	<ion-title class="title">Ajouter des parcelles</ion-title>
+</ion-header>
+<ion-content>
+    <br/>
+    <br/>
+<ion-item>
+<ion-input [(ngModel)]="firebaseData.IDParcelle" type="texte" placeholder="Entrer ID-Parcelle" ></ion-input>
+</ion-item>
+
+<br/>
+<ion-item>
+<ion-input [(ngModel)]="firebaseData.TypeParcelle" type="texte" placeholder="Entrer Type-Parcelle" ></ion-input>
+</ion-item>
+<br/>
+<ion-item>
+<ion-input [(ngModel)]="firebaseData.EtatParcelle" type="texte" placeholder="Entrer Etat-Parcelle" ></ion-input>
+</ion-item>
+<br/>
+<ion-item>
+<ion-input [(ngModel)]="firebaseData.NomClient" type="texte" placeholder="Entrer Nom-Client" ></ion-input>
+</ion-item>
+<br/>  
+<ion-item>
+<ion-input [(ngModel)]="firebaseData.PrenomClient" type="texte" placeholder="Entrer Prénom-Client" ></ion-input>
+</ion-item>
+<br/>
+<div class="item-note" item-end>
+    <ion-button (click)="addFirebase()" color="secondary" class="btn">
+        Ajouter
+        <ion-icon name="add-circle" slot="start"></ion-icon>
+    </ion-button>
+</div>
+<ion-item lines="none">
+    <ion-button slot="end" fill="clear"><a href="http://localhost:8100/deleteupdate/">Accéder aux listes parcelles</a></ion-button>
+</ion-item>
+
+
+</ion-content>

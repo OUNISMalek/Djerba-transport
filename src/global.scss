@@ -24,3 +24,19 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.inscription-modal .modal-wrapper{
+    height: 60%;
+    top: 90%;
+    position: absolute;
+    display: block;
+    border: 20% 20% 0 0;
+}
+.connexion-modal .modal-wrapper{
+    height: 60%;
+    top: 90%;
+    position: absolute;
+    display: block;
+    border: 20% 20% 0 0;
+}

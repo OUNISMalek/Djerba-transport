@@ -1,0 +1,37 @@
+<ion-header >
+  <ion-toolbar class="header">
+    <ion-img class="logoimg" src="../assets/icon/logoJTM_prev_ui.png"></ion-img>
+    <ion-title class="title">Connectez-vous !</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding ion-text-center">
+  
+  <div class="login-content">
+  <form>    
+    <ion-img class="imagee" src="../assets/imag3.png"></ion-img>
+    <ion-item lines="full">
+      <ion-label position="floating">Adresse-email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item> 
+    <br/>
+<br/>
+    <ion-item lines="full">
+      <ion-label position="floating">Mot de passe</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+    <br/>
+    <br/> 
+      <ion-button shape="round" type="submit" color="#e76a2d" class="btn1" (click)="connexion(email, password)" ><a href="http://localhost:8100/dashboard/"></a>Se Connecter
+        
+      </ion-button>
+      <br/>
+      <br/>
+      <ion-item lines="none">
+        <ion-button slot="end" fill="clear" (click)="oublier()">Mot de passe oublié!</ion-button>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-button slot="end" fill="clear"><a href="http://localhost:8100/inscription/">Créer un nouveau compte.</a></ion-button>
+      </ion-item>
+  </form>
+</div>
+</ion-content>

@@ -1,8 +1,20 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-
 /** Ionic CSS Variables **/
 :root {
+  /** facebook **/
+    --ion-color-facebook: #3b5999;
+    --ion-color-facebook-rgb: 59, 89, 153;
+    --ion-color-facebook-contrast: #ffffff;
+    --ion-color-facebook-contrast-rgb: 255, 255, 255;
+    --ion-color-facebook-shade: #324b81;
+    --ion-color-facebook-tint: #476bb8;
+  
+  /** google **/
+    --ion-color-google: #cd201f;
+    --ion-color-google-rgb: 245, 61, 61;
+    --ion-color-google-contrast: #ffffff;
+    --ion-color-google-contrast-rgb: 255, 255, 255;
+    --ion-color-google-shade: #cd201f;
+    --ion-color-google-tint: #cd201f;
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -234,3 +246,4 @@
     --ion-card-background: #1e1e1e;
   }
 }
+

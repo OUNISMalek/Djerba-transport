@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img class="logoimg" src="../assets/icon/logoJTM_prev_ui.png"></ion-img>
+    <ion-title class="title">verify-email</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding ion-text-center">
+  <br/><br/>
+  <h1 class="text-center">Un e-mail vient de vous être envoyé.</h1>
+  <p>
+    Pour finaliser votre inscription, accédez à votre boîte de réception pour activer votre compte.
+    <br/>Pas d'e-mail reçu dans votre boîte de réception ou vos spams?<br/><br/>
+    <a class="button button-ghost grey full-false medium square animate-false anim-type-ghost hover-fill">Renvoyer l'e-mail.</a>  
+  </p>
+<ion-item lines="none">
+<ion-button slot="end" fill="clear" (click)="IonicAuthService.SendVerificationMail()">E-mail de vérification</ion-button>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-button slot="end" fill="clear"><a href="http://localhost:8100/dashboard/">Gérer les parcelles</a></ion-button>
+</ion-item>
+</ion-content>

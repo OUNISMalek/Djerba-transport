@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-img class="logoimg" src="../assets/icon/logoJTM_prev_ui.png"></ion-img>
+<ion-title class="title">Gestion des parcelles</ion-title>
+</ion-header>
+<ion-content class="ion-margin">
+  <br/>
+  <br/>
+  <div class="card">
+    <div class="card-header card-header-danger" >
+        <h2 class="card-title " class="text-center">Liste des parcelles</h2>
+        <p class="card-category" class="text-center">Gérer les parcelles</p>
+    </div>
+  <ion-grid class="ion-margin" border="0">
+    <ion-row class="color">
+      <ion-col>ID-Parcelle</ion-col>
+      <ion-col class="type">Type-Parcelle</ion-col>
+      <ion-col class="etat">Etat-Parcelle</ion-col>
+      <ion-col >Nom-Client</ion-col>
+      <ion-col >Prénom-Client</ion-col>
+      <ion-col>Supprimer/Modifier</ion-col>
+      
+    </ion-row>
+    <ion-row *ngFor="let parcelle of parcelles; index as i" class="row">
+      <ion-col>{{ i + 1 }}</ion-col>
+      <ion-col >{{parcelle.TypeParcelle }}</ion-col>
+      <ion-col >{{parcelle.EtatParcelle }}</ion-col>
+      <ion-col >{{parcelle.NomClient}}</ion-col>
+      <ion-col >{{parcelle.PrenomClient}}</ion-col>
+      <ion-col>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-button class="bou" size="small" (click)="supprimer(parcelle.IDParcelle)" color="f43c1b">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-button class="ton" size="small" (click)="update_User(parcelle)" color="4a7dbc">
+          <ion-icon name="create"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img class="logoimg" src="../assets/icon/logoJTM_prev_ui.png"></ion-img>
+    <ion-title class="title">Créer un nouveau Compte</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding ion-text-center">
+  <h1 class="tit">Bienvenue !</h1><br/>
+<br/>
+<div class="form">
+<div class="login-content">
+<ion-item lines="full">
+  <ion-label position="floating">Nom et Prénom</ion-label>
+  <ion-input type="text" placeholder="Nom" ngModel required [(ngModel)]="nomprenom"></ion-input>
+</ion-item>
+</div>
+<br/>
+<div class="login-content">
+<ion-item lines="full">
+  <ion-label position="floating">Adresse-email</ion-label>
+  <ion-input type="Email" placeholder="Adresse Email" ngModel required [(ngModel)]="email"></ion-input>
+</ion-item>
+</div>
+<br/>
+<div class="login-content">
+<ion-item lines="full">
+  <ion-label position="floating">Mot de passe</ion-label>
+  <ion-input type="password" placeholder="Mot de passe" ngModel required [(ngModel)]="password"></ion-input>
+</ion-item>
+</div>
+<br/>
+<div class="login-content">
+<ion-item lines="full">
+  <ion-label position="floating">Confirmer Mot de passe</ion-label>
+  <ion-input type="password" placeholder="Confirmer Mot de passe" ngModel required [(ngModel)]="confirmpassword"></ion-input>
+</ion-item>
+</div>
+<br/>
+<br/>
+<div class="login-content">
+<ion-button shape="round" type="submit" color="#008000" class="btn1" (click)="inscription(nomprenom, email, password, confirmpassword)">S'inscrire
+</ion-button>
+</div>
+<br/>
+<div class="col-lg-6 order-lg-1 text-center text-lg-start">
+<p >Créer votre compte avec</p>
+<ion-icon name="logo-linkedin" class="logoo"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+<ion-icon name="logo-facebook" class="logo"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+<ion-icon name="logo-google" class="logo"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div>
+</ion-content>
